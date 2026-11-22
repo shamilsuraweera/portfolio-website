@@ -4,7 +4,7 @@ Static portfolio site (HTML/CSS/JS, no build step) for GitHub Pages.
 
 ## Customize
 - Edit placeholder text in `index.html` (name, about, skills, projects, experience, contact).
-- Add your photo as `assets/profile.jpg` (it hides itself if missing).
+- Add your photo as `assets/profile.png` (it hides itself if missing).
 - Colors live in the CSS variables at the top of `style.css`.
 
 ## Preview locally
