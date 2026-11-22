@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — Your Role." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">YN<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" aria-label="Toggle theme">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Your Name</h1>
+      <p class="tagline">Your Role — a one-line summary of what you do and what you care about.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>About</h2>
+      <div class="about">
+        <img src="assets/profile.jpg" alt="Photo of Your Name" onerror="this.style.display='none'" />
+        <p>Write a short paragraph about yourself: your background, what you're passionate about, and what you're looking for.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>Skill One</li><li>Skill Two</li><li>Skill Three</li>
+        <li>Skill Four</li><li>Skill Five</li><li>Skill Six</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Short description of the project and the problem it solves.</p>
+          <p class="tags">Tech A · Tech B</p>
+          <a href="#">Live</a> <a href="#">Source</a>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Short description of the project and the problem it solves.</p>
+          <p class="tags">Tech A · Tech B</p>
+          <a href="#">Live</a> <a href="#">Source</a>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Short description of the project and the problem it solves.</p>
+          <p class="tags">Tech A · Tech B</p>
+          <a href="#">Live</a> <a href="#">Source</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h2>Experience &amp; Education</h2>
+      <ol class="timeline">
+        <li><span class="when">2023 — Present</span><h3>Job Title · Company</h3><p>What you did and achieved.</p></li>
+        <li><span class="when">2019 — 2023</span><h3>Degree · University</h3><p>Highlights, focus areas.</p></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <p>Want to work together? Reach out.</p>
+      <p class="links">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://github.com/your-username">GitHub</a>
+        <a href="https://linkedin.com/in/your-username">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Your Name</footer>
+  <script src="script.js"></script>
+</body>
+</html>
