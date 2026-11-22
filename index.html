@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name — Your Role." />
+  <title>Shamil Suraweera — Techno-Functional Consultant</title>
+  <meta name="description" content="Portfolio of Shamil Suraweera — Techno-Functional Consultant specialising in ERP, Microsoft Dynamics 365 and Odoo." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="nav">
-    <a class="logo" href="#home">YN<span>.</span></a>
+    <a class="logo" href="#home">SS<span>.</span></a>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
       <button id="theme" aria-label="Toggle theme">◐</button>
     </nav>
@@ -23,8 +24,8 @@
   <main>
     <section id="home" class="hero">
       <p class="eyebrow">Hi, I'm</p>
-      <h1>Your Name</h1>
-      <p class="tagline">Your Role — a one-line summary of what you do and what you care about.</p>
+      <h1>Shamil Suraweera</h1>
+      <p class="tagline">Techno-Functional Consultant | ERP | Microsoft Dynamics 365 | Odoo</p>
       <div class="cta">
         <a class="btn primary" href="#projects">View my work</a>
         <a class="btn" href="#contact">Get in touch</a>
@@ -34,48 +35,69 @@
     <section id="about" class="reveal">
       <h2>About</h2>
       <div class="about">
-        <img src="assets/profile.jpg" alt="Photo of Your Name" onerror="this.style.display='none'" />
-        <p>Write a short paragraph about yourself: your background, what you're passionate about, and what you're looking for.</p>
+        <img src="assets/profile.jpg" alt="Photo of Shamil Suraweera" onerror="this.style.display='none'" />
+        <p>A versatile professional with expertise in Enterprise Resource Planning (ERP) software development and functional consulting. Based in Colombo, Sri Lanka, I work across both the functional and technical layers of ERP platforms, from requirement gathering and solution design to customization, deployment and support.</p>
       </div>
     </section>
 
     <section id="skills" class="reveal">
       <h2>Skills</h2>
-      <ul class="chips">
-        <li>Skill One</li><li>Skill Two</li><li>Skill Three</li>
-        <li>Skill Four</li><li>Skill Five</li><li>Skill Six</li>
-      </ul>
+      <h3 class="group">ERP Platforms &amp; Business Applications</h3>
+      <ul class="chips"><li>Microsoft Dynamics 365</li><li>Microsoft Power Platform</li><li>SAP</li><li>Odoo</li></ul>
+      <h3 class="group">Programming &amp; Query Languages</h3>
+      <ul class="chips"><li>C#</li><li>X++</li><li>AL (Business Central)</li><li>Python</li><li>JavaScript</li></ul>
+      <h3 class="group">Databases</h3>
+      <ul class="chips"><li>Azure SQL</li><li>Azure Cosmos DB</li><li>Microsoft SQL Server</li><li>Document DB</li><li>PostgreSQL</li><li>MongoDB</li></ul>
+      <h3 class="group">Cloud &amp; Productivity</h3>
+      <ul class="chips"><li>Microsoft Azure</li><li>Microsoft Fabric</li><li>Power BI</li><li>Microsoft Office</li><li>Microsoft Copilot</li></ul>
+      <h3 class="group">Frameworks, Data Formats &amp; Markup</h3>
+      <ul class="chips"><li>.NET Framework</li><li>ORM</li><li>XML</li><li>JSON</li><li>HTML</li><li>CSS</li></ul>
+      <h3 class="group">Languages</h3>
+      <ul class="chips"><li>English – Full Professional</li><li>Sinhala – Native</li><li>Tamil – Native</li></ul>
     </section>
 
     <section id="projects" class="reveal">
       <h2>Projects</h2>
+      <p class="note">Screenshots go in <code>assets/projects/</code>; each card shows a placeholder until its image exists.</p>
       <div class="grid">
         <article class="card">
-          <h3>Project One</h3>
-          <p>Short description of the project and the problem it solves.</p>
-          <p class="tags">Tech A · Tech B</p>
-          <a href="#">Live</a> <a href="#">Source</a>
+          <figure class="shot"><img src="assets/projects/odoo.png" alt="Screenshot of Enterprise Resource Planning – Odoo" loading="lazy" onerror="this.parentElement.classList.add('empty')" /><figcaption>Screenshot coming soon</figcaption></figure>
+          <h3>Enterprise Resource Planning – Odoo</h3>
+          <p>Implemented and customized Odoo ERP solutions for SME-level businesses across Enterprise, Community and Online editions. Covered the full lifecycle from requirement gathering to deployment, training and support. Built custom modules, reports, UI components, workflows and REST API integrations, and deployed on Docker, Nginx, SSL and PostgreSQL across CRM, Sales, Accounting, Inventory, HR, Manufacturing and POS.</p>
+          <p class="tags">Python · PostgreSQL · Odoo ORM · OWL · QWeb · Bootstrap · Docker</p>
         </article>
         <article class="card">
-          <h3>Project Two</h3>
-          <p>Short description of the project and the problem it solves.</p>
-          <p class="tags">Tech A · Tech B</p>
-          <a href="#">Live</a> <a href="#">Source</a>
+          <figure class="shot"><img src="assets/projects/dynamics365.png" alt="Screenshot of Enterprise Resource Planning – Microsoft Dynamics 365" loading="lazy" onerror="this.parentElement.classList.add('empty')" /><figcaption>Screenshot coming soon</figcaption></figure>
+          <h3>Enterprise Resource Planning – Microsoft Dynamics 365</h3>
+          <p>Configured and customized Dynamics 365 ERP solutions across functional and technical layers, managing full implementation lifecycles from solution design to post-go-live support. Developed extensions, workflows and integrations, built Power Platform automations, and delivered Power BI reporting across finance, sales and operations.</p>
+          <p class="tags">Dynamics 365 · Power Platform · C# · X++ · AL · .NET · Azure SQL · Cosmos DB · Power BI</p>
         </article>
         <article class="card">
-          <h3>Project Three</h3>
-          <p>Short description of the project and the problem it solves.</p>
+          <figure class="shot"><img src="assets/projects/project-3.png" alt="Screenshot of More projects coming soon" loading="lazy" onerror="this.parentElement.classList.add('empty')" /><figcaption>Screenshot coming soon</figcaption></figure>
+          <h3>More projects coming soon</h3>
+          <p>Details for this project will be added here.</p>
           <p class="tags">Tech A · Tech B</p>
-          <a href="#">Live</a> <a href="#">Source</a>
         </article>
       </div>
     </section>
 
     <section id="experience" class="reveal">
-      <h2>Experience &amp; Education</h2>
+      <h2>Experience</h2>
       <ol class="timeline">
-        <li><span class="when">2023 — Present</span><h3>Job Title · Company</h3><p>What you did and achieved.</p></li>
-        <li><span class="when">2019 — 2023</span><h3>Degree · University</h3><p>Highlights, focus areas.</p></li>
+        <li><span class="when">Jul 2026 — Present</span><h3>ERP Developer &amp; Consultant (Shared Group Role) · ChillFrost Ltd | ColdCo Group | Smart Equip, United Kingdom</h3><ul><li>Delivered ERP customization and support across three affiliated entities, cutting duplicate configuration effort by 67% with a shared Microsoft Dynamics 365 customization framework.</li><li>Improved cross-entity reporting accuracy by 55% by standardizing data structures, workflows and module configurations.</li><li>Reduced average issue-resolution turnaround by 88% through consolidated support processes and reusable troubleshooting playbooks.</li><li>Improved efficiency for 19 business functions by eliminating 35 manual or duplicate processes.</li></ul></li>
+        <li><span class="when">Jul 2025 — Jun 2026</span><h3>Business Analyst · HCLTech (Client: Sasol), United States</h3><ul><li>Gathered client requirements, configured enterprise systems and translated business needs into functional designs.</li><li>Supported process optimization and implementation initiatives.</li><li>Managed incident, task and change processes through ServiceNow ITSM, protecting critical ERP and data infrastructure.</li><li>Primary customer contact for high-priority issues, resolving them within SLA targets and in line with ITIL best practices.</li><li>Maintained service records and contributed to knowledge-base documentation.</li></ul></li>
+        <li><span class="when">Jul 2022 — Jun 2025</span><h3>Associate Business Analyst · HCLTech (Client: Unilever), United Kingdom &amp; Ireland</h3><ul><li>Gathered client requirements, configured enterprise systems and translated business needs into functional designs.</li><li>Supported process optimization and implementation initiatives.</li><li>Managed incident, task and change processes through ServiceNow ITSM.</li><li>Primary customer contact for high-priority issues, coordinating cross-functional teams to resolve them within SLA targets.</li><li>Maintained service records and contributed to knowledge-base documentation.</li></ul></li>
+        <li><span class="when">Jan 2024 — Dec 2024</span><h3>Software Engineer (ERP) · Insight Square (Pvt) Ltd, Colombo</h3><ul><li>Customized and implemented ERP platforms to align with business processes.</li><li>Built mobile, web and desktop applications integrated with ERP systems.</li><li>Provided technology consulting on digital transformation, automation and scalable software.</li></ul></li>
+        <li><span class="when">Earlier roles</span><h3>Internship Trainee · HCLTech · System Coordinator · International Trimmings &amp; Labels · Data Entry Operator · DMS Software Technologies</h3><ul><li>HCLTech internship: hands-on exposure to ITSM practices in an ITIL-driven environment.</li><li>System Coordinator (2021): coordinated data workflows between production and quality teams.</li><li>Data Entry Operator (2020): managed large datasets for operational reporting.</li></ul></li>
+      </ol>
+    </section>
+
+    <section id="education" class="reveal">
+      <h2>Education &amp; Certifications</h2>
+      <ol class="timeline">
+        <li><span class="when">Jan 2022 — Dec 2025</span><h3>BSc (Hons) in Information Technology · Horizon Campus, Colombo</h3><p>GPA: 3.0</p></li>
+        <li><span class="when">Jan 2021 — Dec 2021</span><h3>Advanced Diploma in Information Management Systems · NIBM, Colombo</h3><p>Business and Information Technology. GPA: 3.3</p></li>
+        <li><span class="when">2022</span><h3>Certifications</h3><ul><li>Advanced Software Engineering – Microsoft and LinkedIn</li><li>Enterprise Resource Planning Analysis Certificate – HCLTech</li><li>IT Support Professional Certificate – Skillsoft and HCLTech</li></ul></li>
       </ol>
     </section>
 
@@ -83,14 +105,14 @@
       <h2>Contact</h2>
       <p>Want to work together? Reach out.</p>
       <p class="links">
-        <a href="mailto:you@example.com">you@example.com</a>
-        <a href="https://github.com/your-username">GitHub</a>
-        <a href="https://linkedin.com/in/your-username">LinkedIn</a>
+        <a href="mailto:shamilsuraweera@gmail.com">shamilsuraweera@gmail.com</a>
+        <a href="https://github.com/shamilsuraweera">GitHub</a>
+        <a href="https://linkedin.com/in/shamilsuraweera">LinkedIn</a>
       </p>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Your Name</footer>
+  <footer>© <span id="year"></span> Shamil Suraweera</footer>
   <script src="script.js"></script>
 </body>
 </html>
