@@ -124,3 +124,41 @@ footer { text-align: center; color: var(--muted); padding: 50px 0 32px; font-siz
   .links a, .cta .btn { overflow-wrap: anywhere; text-align: center; }
   .cta .btn { flex: 1 1 140px; }
 }
+
+/* Dynamic + background elements */
+body { background-image: none; position: relative; }
+.bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .5; will-change: transform; }
+.b1 { width: 520px; height: 520px; top: -140px; right: -120px; background: var(--accent2); animation: float1 22s ease-in-out infinite; }
+.b2 { width: 460px; height: 460px; top: 40%; left: -160px; background: var(--accent); animation: float2 26s ease-in-out infinite; }
+.b3 { width: 380px; height: 380px; bottom: -120px; right: 20%; background: #22d3ee; opacity: .28; animation: float3 30s ease-in-out infinite; }
+:root[data-theme="light"] .blob { opacity: .22; }
+:root[data-theme="light"] .b3 { opacity: .16; }
+.grid-bg { position: absolute; inset: 0; background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px; opacity: .45; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 75%); }
+@keyframes float1 { 50% { transform: translate(-90px, 80px) scale(1.1); } }
+@keyframes float2 { 50% { transform: translate(120px, -70px) scale(.92); } }
+@keyframes float3 { 50% { transform: translate(-110px, -60px) scale(1.15); } }
+
+.glow { position: fixed; width: 420px; height: 420px; left: 0; top: 0; z-index: -1; pointer-events: none; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 22%, transparent), transparent 65%); transform: translate(-50%, -50%); opacity: 0; transition: opacity .4s; }
+.glow.on { opacity: 1; }
+
+.progress { position: fixed; top: 0; left: 0; height: 3px; width: 100%; z-index: 20; background: var(--grad); transform: scaleX(0); transform-origin: 0 50%; }
+
+.typing { margin-top: 14px; font-weight: 600; font-size: clamp(1rem, 2.4vw, 1.3rem); }
+#typed { color: var(--accent); }
+.caret { display: inline-block; width: 2px; height: 1.1em; background: var(--accent); margin-left: 3px; vertical-align: -.15em; animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.nav nav a.active { color: var(--text); background: var(--surface); }
+.card { transform-style: preserve-3d; will-change: transform; }
+.reveal.visible .chips li, .reveal.visible .timeline > li, .reveal.visible .card { animation: rise .6s both; animation-delay: calc(var(--i, 0) * 70ms); }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.hero .eyebrow, .hero h1, .hero .tagline, .hero .typing, .hero .cta, .hero .stats { animation: rise .8s both; }
+.hero h1 { animation-delay: .1s; } .hero .tagline { animation-delay: .2s; } .hero .typing { animation-delay: .3s; } .hero .cta { animation-delay: .4s; } .hero .stats { animation-delay: .55s; }
+.about img { animation: bob 6s ease-in-out infinite; }
+@keyframes bob { 50% { transform: translateY(-8px); } }
+
+@media (prefers-reduced-motion: reduce) { .blob, .about img, .caret, .hero * { animation: none !important; } .glow { display: none; } }
+@media (hover: none) { .glow { display: none; } }
