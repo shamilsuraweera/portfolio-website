@@ -17,3 +17,13 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Mobile menu
+const menu = document.getElementById("menu");
+const siteNav = document.getElementById("site-nav");
+const closeMenu = () => { siteNav.classList.remove("open"); menu.setAttribute("aria-expanded", "false"); };
+menu.addEventListener("click", () => {
+  const open = siteNav.classList.toggle("open");
+  menu.setAttribute("aria-expanded", String(open));
+});
+siteNav.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
