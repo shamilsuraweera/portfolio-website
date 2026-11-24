@@ -89,8 +89,8 @@
           <div class="gallery" data-gallery><button type="button" class="shot web" aria-label="Enlarge screenshot"><img src="assets/projects/odoo/1.png" alt="Odoo custom modules screenshot 1" loading="lazy" /></button><div class="thumbs"><button type="button" class="thumb web on" data-kind="web" data-src="assets/projects/odoo/1.png" data-alt="Odoo custom modules screenshot 1" aria-label="Show screenshot 1 of 5"><img src="assets/projects/odoo/1.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/2.png" data-alt="Odoo custom modules screenshot 2" aria-label="Show screenshot 2 of 5"><img src="assets/projects/odoo/2.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/3.png" data-alt="Odoo custom modules screenshot 3" aria-label="Show screenshot 3 of 5"><img src="assets/projects/odoo/3.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/4.png" data-alt="Odoo custom modules screenshot 4" aria-label="Show screenshot 4 of 5"><img src="assets/projects/odoo/4.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/5.png" data-alt="Odoo custom modules screenshot 5" aria-label="Show screenshot 5 of 5"><img src="assets/projects/odoo/5.png" alt="" loading="lazy" /></button></div></div>
           <p class="badges"><span>Web</span></p>
           <h3>Odoo 20 Custom Modules: Healthcare, Supply Chain &amp; LMS</h3>
-          <p>Fifteen custom Odoo 20 modules covering a multi-institution medical records system, a tamper-evident supply chain traceability platform and a learning management system. Each installs on its own, with a separate demo-data module.</p>
-          <ul class="points"><li>Patient consent with scope and expiry, plus an audit log of every cross-institution read.</li><li>SHA-256 hash-chained batch history, custody transfers, lineage-aware recalls and public QR pages.</li><li>89 record-level access rules. Automated tests caught a nested-rule data leak, which was fixed and covered with regression tests.</li><li>15 modules, 28 models and 110+ automated tests.</li></ul>
+          <p>Fifteen custom Odoo 20 modules: multi-institution medical records, tamper-evident supply chain traceability and a learning management system. Each installs on its own.</p>
+          <ul class="points"><li>Patient consent with scope and expiry, plus an audit log of every cross-institution read.</li><li>SHA-256 hash-chained batch history, custody transfers, lineage-aware recalls and public QR pages.</li><li>89 record-level access rules and 110+ automated tests, including regression tests for a fixed data leak.</li></ul>
           <p class="tags">Python · Odoo 20 · ORM · QWeb · PostgreSQL · Docker</p>
           <p class="repo"><a href="https://github.com/emtek-lk/odoo" target="_blank" rel="noopener">View repository ↗</a></p>
         </article>
@@ -99,7 +99,7 @@
           <p class="badges"><span>Web</span></p>
           <h3>Cortex</h3>
           <p>A modular, multi-company ERP base built as a TypeScript monorepo. Each customer gets their own repository that receives core updates without merge conflicts.</p>
-          <ul class="points"><li>Sales, invoicing, purchasing, inventory, accounting, and HR and payroll. The API, screens, permissions and menu are generated from module manifests.</li><li>Multi-company with umbrella sharing. Money in whole cents, an append-only ledger and reversals instead of edits.</li><li>Editable roles, an audit log with before/after values, and approvals for large payments.</li><li>About 1,000 automated tests, Docker Compose and GitHub Actions CI.</li></ul>
+          <ul class="points"><li>Sales, invoicing, purchasing, inventory, accounting, and HR and payroll, generated from module manifests.</li><li>Multi-company with umbrella sharing. Money in whole cents, an append-only ledger and reversals instead of edits.</li><li>Editable roles, audit log and approvals. About 1,000 automated tests, Docker and CI.</li></ul>
           <p class="tags">TypeScript · NestJS · React 19 · PostgreSQL · Kysely · Zod · Tailwind · Turborepo</p>
           <p class="repo"><a href="https://github.com/emtek-lk/cortex" target="_blank" rel="noopener">View repository ↗</a></p>
         </article>
@@ -108,7 +108,7 @@
           <p class="badges"><span>Web</span></p>
           <h3>GTEK Open ERP</h3>
           <p>A full-stack ERP foundation with double-entry accounting, sales, purchasing, inventory, contacts and bank reconciliation. Solo build covering architecture, front end, back end and database.</p>
-          <ul class="points"><li>Chart of accounts, journals, posting and reversal, general ledger and trial balance. Debits equalling credits is enforced in the database.</li><li>Invoices and vendor bills, products and stock, a shared contact directory and bank reconciliation.</li><li>JWT auth with Admin/User roles and a responsive dark/light dashboard.</li><li>Migration-managed schema, DECIMAL(19,4) money handling and 60 client tests.</li></ul>
+          <ul class="points"><li>Chart of accounts, journals, ledger and trial balance, with debits equalling credits enforced in the database.</li><li>Invoices, vendor bills, inventory, contacts and bank reconciliation, with JWT auth and Admin/User roles.</li><li>Migration-managed schema, DECIMAL(19,4) money handling and 60 client tests.</li></ul>
           <p class="tags">React 19 · NestJS 11 · TypeORM · SQL Server · Jest</p>
           <p class="repo"><a href="https://github.com/shamilsuraweera/gtek-open-erp" target="_blank" rel="noopener">View repository ↗</a></p>
         </article>
@@ -135,7 +135,7 @@
           <p class="badges"><span>Web</span><span>Mobile</span></p>
           <h3>Cure All: Clinical Workflow Platform</h3>
           <p>A role-based healthcare system connecting hospitals, doctors, pharmacies, labs and patients. Patients and guardians can see everything on web and mobile.</p>
-          <ul class="points"><li>Multi-item prescriptions, partial dispensing and over-dispense protection.</li><li>Structured lab results with normal ranges and attachments.</li><li>Mobile app with role-based screens, prescription QR codes scanned by pharmacists, and push notifications.</li><li>Short-lived HS256 JWTs, argon2 hashing, rate limiting and an audit log.</li></ul>
+          <ul class="points"><li>Multi-item prescriptions, partial dispensing, over-dispense protection and structured lab results.</li><li>Mobile app with role-based screens, prescription QR codes scanned by pharmacists, and push notifications.</li><li>Short-lived HS256 JWTs, argon2 hashing, rate limiting and an audit log.</li></ul>
           <p class="tags">TypeScript · Express 5 · PostgreSQL · Prisma · React · React Native · Expo</p>
           <p class="repo"><a href="https://github.com/shamilsuraweera/cure_all" target="_blank" rel="noopener">View repository ↗</a></p>
         </article>
