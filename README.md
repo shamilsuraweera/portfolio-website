@@ -3,9 +3,13 @@
 Static portfolio site (HTML/CSS/JS, no build step) for GitHub Pages.
 
 ## Customize
-- Edit placeholder text in `index.html` (name, about, skills, projects, experience, contact).
-- Add your photo as `assets/profile.png` (it hides itself if missing).
+- Edit content in `index.html` (about, skills, projects, experience, contact).
 - Colors live in the CSS variables at the top of `style.css`.
+
+## Adding a project screenshot
+Save the image in `assets/projects/` and add this as the first child of the project's `<article class="card">`:
+
+    <figure class="shot"><img src="assets/projects/NAME.png" alt="Screenshot of PROJECT" loading="lazy" /></figure>
 
 ## Preview locally
     python3 -m http.server 8000   # then open http://localhost:8000

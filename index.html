@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shamil Suraweera — Techno-Functional Consultant</title>
+  <meta name="theme-color" content="#0b0f17" />
   <meta name="description" content="Portfolio of Shamil Suraweera — Techno-Functional Consultant specialising in ERP, Microsoft Dynamics 365 and Odoo." />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>document.documentElement.dataset.theme=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark")</script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -51,7 +53,7 @@
     <section id="about" class="reveal">
       <h2>About</h2>
       <div class="about">
-        <img src="assets/profile.png" alt="Photo of Shamil Suraweera" onerror="this.style.display='none'" />
+        <img src="assets/profile.png" alt="Photo of Shamil Suraweera" />
         <p>A versatile professional with expertise in Enterprise Resource Planning (ERP) software development and functional consulting. Based in Colombo, Sri Lanka, I work across both the functional and technical layers of ERP platforms, from requirement gathering and solution design to customization, deployment and support.</p>
       </div>
     </section>
@@ -69,30 +71,72 @@
       <h3 class="group">Frameworks, Data Formats &amp; Markup</h3>
       <ul class="chips"><li>.NET Framework</li><li>ORM</li><li>XML</li><li>JSON</li><li>HTML</li><li>CSS</li></ul>
       <h3 class="group">Languages</h3>
-      <ul class="chips"><li>English – Full Professional</li><li>Sinhala – Native</li><li>Tamil – Native</li></ul>
+      <ul class="chips"><li>English – Full Professional</li><li>Sinhala – Native or Bilingual</li><li>Tamil – Native or Bilingual</li></ul>
     </section>
 
     <section id="projects" class="reveal">
       <h2>Projects</h2>
-      <p class="note">Screenshots go in <code>assets/projects/</code>; each card shows a placeholder until its image exists.</p>
       <div class="grid">
         <article class="card">
-          <figure class="shot"><img src="assets/projects/odoo.png" alt="Screenshot of Enterprise Resource Planning – Odoo" loading="lazy" onerror="this.parentElement.classList.add('empty')" /><figcaption>Screenshot coming soon</figcaption></figure>
-          <h3>Enterprise Resource Planning – Odoo</h3>
-          <p>Implemented and customized Odoo ERP solutions for SME-level businesses across Enterprise, Community and Online editions. Covered the full lifecycle from requirement gathering to deployment, training and support. Built custom modules, reports, UI components, workflows and REST API integrations, and deployed on Docker, Nginx, SSL and PostgreSQL across CRM, Sales, Accounting, Inventory, HR, Manufacturing and POS.</p>
-          <p class="tags">Python · PostgreSQL · Odoo ORM · OWL · QWeb · Bootstrap · Docker</p>
-        </article>
-        <article class="card">
-          <figure class="shot"><img src="assets/projects/dynamics365.png" alt="Screenshot of Enterprise Resource Planning – Microsoft Dynamics 365" loading="lazy" onerror="this.parentElement.classList.add('empty')" /><figcaption>Screenshot coming soon</figcaption></figure>
-          <h3>Enterprise Resource Planning – Microsoft Dynamics 365</h3>
-          <p>Configured and customized Dynamics 365 ERP solutions across functional and technical layers, managing full implementation lifecycles from solution design to post-go-live support. Developed extensions, workflows and integrations, built Power Platform automations, and delivered Power BI reporting across finance, sales and operations.</p>
+          <div class="gallery"><div class="shot empty"><span>Screenshots coming soon</span></div></div>
+          <p class="badges"><span>ERP</span></p>
+          <h3>Microsoft Dynamics 365</h3>
+          <p>Configured and customized Dynamics 365 ERP solutions across functional and technical layers, managing full implementation lifecycles from solution design to post-go-live support.</p>
+          <ul class="points"><li>Developed extensions, workflows and integrations using X++, AL and C#/.NET.</li><li>Built Power Platform automations to extend standard functionality.</li><li>Delivered Power BI reporting across finance, sales and operations.</li></ul>
           <p class="tags">Dynamics 365 · Power Platform · C# · X++ · AL · .NET · Azure SQL · Cosmos DB · Power BI</p>
         </article>
         <article class="card">
-          <figure class="shot"><img src="assets/projects/project-3.png" alt="Screenshot of More projects coming soon" loading="lazy" onerror="this.parentElement.classList.add('empty')" /><figcaption>Screenshot coming soon</figcaption></figure>
-          <h3>More projects coming soon</h3>
-          <p>Details for this project will be added here.</p>
-          <p class="tags">Tech A · Tech B</p>
+          <div class="gallery" data-gallery><button type="button" class="shot web" aria-label="Enlarge screenshot"><img src="assets/projects/odoo/1.png" alt="Odoo custom modules screenshot 1" loading="lazy" /></button><div class="thumbs"><button type="button" class="thumb web on" data-kind="web" data-src="assets/projects/odoo/1.png" data-alt="Odoo custom modules screenshot 1" aria-label="Show screenshot 1 of 5"><img src="assets/projects/odoo/1.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/2.png" data-alt="Odoo custom modules screenshot 2" aria-label="Show screenshot 2 of 5"><img src="assets/projects/odoo/2.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/3.png" data-alt="Odoo custom modules screenshot 3" aria-label="Show screenshot 3 of 5"><img src="assets/projects/odoo/3.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/4.png" data-alt="Odoo custom modules screenshot 4" aria-label="Show screenshot 4 of 5"><img src="assets/projects/odoo/4.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/odoo/5.png" data-alt="Odoo custom modules screenshot 5" aria-label="Show screenshot 5 of 5"><img src="assets/projects/odoo/5.png" alt="" loading="lazy" /></button></div></div>
+          <p class="badges"><span>Web</span></p>
+          <h3>Odoo 20 Custom Modules: Healthcare, Supply Chain &amp; LMS</h3>
+          <p>Fifteen custom Odoo 20 modules covering a multi-institution medical records system, a tamper-evident supply chain traceability platform and a learning management system. Each installs on its own, with a separate demo-data module.</p>
+          <ul class="points"><li>Patient consent with scope and expiry, plus an audit log of every cross-institution read.</li><li>SHA-256 hash-chained batch history, custody transfers, lineage-aware recalls and public QR pages.</li><li>89 record-level access rules. My own tests caught a nested-rule data leak, which I fixed with regression tests.</li><li>15 modules, 28 models and 110+ automated tests.</li></ul>
+          <p class="tags">Python · Odoo 20 · ORM · QWeb · PostgreSQL · Docker</p>
+          <p class="repo"><a href="https://github.com/emtek-lk/odoo" target="_blank" rel="noopener">View repository ↗</a></p>
+        </article>
+        <article class="card">
+          <div class="gallery" data-gallery><button type="button" class="shot web" aria-label="Enlarge screenshot"><img src="assets/projects/cortex/web-1.png" alt="Cortex web app screenshot 1" loading="lazy" /></button></div>
+          <p class="badges"><span>Web</span></p>
+          <h3>Cortex</h3>
+          <p>A modular, multi-company ERP base built as a TypeScript monorepo. Each customer gets their own repository that receives core updates without merge conflicts.</p>
+          <ul class="points"><li>Sales, invoicing, purchasing, inventory, accounting, and HR and payroll. The API, screens, permissions and menu are generated from module manifests.</li><li>Multi-company with umbrella sharing. Money in whole cents, an append-only ledger and reversals instead of edits.</li><li>Editable roles, an audit log with before/after values, and approvals for large payments.</li><li>About 1,000 automated tests, Docker Compose and GitHub Actions CI.</li></ul>
+          <p class="tags">TypeScript · NestJS · React 19 · PostgreSQL · Kysely · Zod · Tailwind · Turborepo</p>
+          <p class="repo"><a href="https://github.com/emtek-lk/cortex" target="_blank" rel="noopener">View repository ↗</a></p>
+        </article>
+        <article class="card">
+          <div class="gallery" data-gallery><button type="button" class="shot web" aria-label="Enlarge screenshot"><img src="assets/projects/gtek-open-erp/1.png" alt="GTEK Open ERP dashboard screenshot 1" loading="lazy" /></button></div>
+          <p class="badges"><span>Web</span></p>
+          <h3>GTEK Open ERP</h3>
+          <p>A full-stack ERP foundation with double-entry accounting, sales, purchasing, inventory, contacts and bank reconciliation. Solo build covering architecture, front end, back end and database.</p>
+          <ul class="points"><li>Chart of accounts, journals, posting and reversal, general ledger and trial balance. Debits equalling credits is enforced in the database.</li><li>Invoices and vendor bills, products and stock, a shared contact directory and bank reconciliation.</li><li>JWT auth with Admin/User roles and a responsive dark/light dashboard.</li><li>Migration-managed schema, DECIMAL(19,4) money handling and 60 client tests.</li></ul>
+          <p class="tags">React 19 · NestJS 11 · TypeORM · SQL Server · Jest</p>
+          <p class="repo"><a href="https://github.com/shamilsuraweera/gtek-open-erp" target="_blank" rel="noopener">View repository ↗</a></p>
+        </article>
+        <article class="card">
+          <div class="gallery" data-gallery><button type="button" class="shot web" aria-label="Enlarge screenshot"><img src="assets/projects/gtek-business-erp/1.png" alt="GTEK Business ERP screenshot 1" loading="lazy" /></button></div>
+          <p class="badges"><span>Web</span></p>
+          <h3>GTEK Business ERP</h3>
+          <p>A multi-company ERP built as a .NET 10 modular monolith with a React client and PostgreSQL. It runs order-to-cash and procure-to-pay end to end with a ledger that always balances.</p>
+          <ul class="points"><li>Three-way match with price and delivery tolerances, and a four-eyes approval workflow.</li><li>Five modules with enforced boundaries, plus in-app notifications, an email outbox and scheduled reminders.</li><li>457 automated tests, an 84-check smoke test, 10 Playwright browser tests, 38 decision records and CI.</li></ul>
+          <p class="tags">C# · .NET 10 · EF Core · PostgreSQL · React 19 · TypeScript · Playwright · GitHub Actions</p>
+          <p class="repo"><a href="https://github.com/shamilsuraweera/gtek-business-erp" target="_blank" rel="noopener">View repository ↗</a></p>
+        </article>
+        <article class="card">
+          <div class="gallery" data-gallery><button type="button" class="shot web" aria-label="Enlarge screenshot"><img src="assets/projects/true_root/web-user-1.png" alt="True Root screenshot 1" loading="lazy" /></button><div class="thumbs"><button type="button" class="thumb web on" data-kind="web" data-src="assets/projects/true_root/web-user-1.png" data-alt="True Root screenshot 1" aria-label="Show screenshot 1 of 4"><img src="assets/projects/true_root/web-user-1.png" alt="" loading="lazy" /></button><button type="button" class="thumb web" data-kind="web" data-src="assets/projects/true_root/web-admin-1.png" data-alt="True Root screenshot 2" aria-label="Show screenshot 2 of 4"><img src="assets/projects/true_root/web-admin-1.png" alt="" loading="lazy" /></button><button type="button" class="thumb mobile" data-kind="mobile" data-src="assets/projects/true_root/mobile-user-1.png" data-alt="True Root screenshot 3" aria-label="Show screenshot 3 of 4"><img src="assets/projects/true_root/mobile-user-1.png" alt="" loading="lazy" /></button><button type="button" class="thumb mobile" data-kind="mobile" data-src="assets/projects/true_root/mobile-admin-1.png" data-alt="True Root screenshot 4" aria-label="Show screenshot 4 of 4"><img src="assets/projects/true_root/mobile-admin-1.png" alt="" loading="lazy" /></button></div></div>
+          <p class="badges"><span>Web</span><span>Mobile</span></p>
+          <h3>True Root</h3>
+          <p>Agricultural supply-chain traceability. Every lot of produce gets a QR code, a tamper-evident history and an auditable chain of ownership from farm to exporter.</p>
+          <ul class="points"><li>Batch lifecycle with split, merge and transform, keeping the full parent/child trail.</li><li>Ownership transfers with request, approve and reject, for Farmer, Trader, Exporter and Admin roles.</li><li>One Flutter codebase for Android, iOS, web and desktop, with QR scanning and an adaptive light/dark design system.</li></ul>
+          <p class="tags">Flutter · Dart · Riverpod · NestJS · TypeORM · PostgreSQL · Jest</p>
+        </article>
+        <article class="card">
+          <div class="gallery" data-gallery><button type="button" class="shot web" aria-label="Enlarge screenshot"><img src="assets/projects/cure_all/web-1.png" alt="Cure All screenshot 1" loading="lazy" /></button><div class="thumbs"><button type="button" class="thumb web on" data-kind="web" data-src="assets/projects/cure_all/web-1.png" data-alt="Cure All screenshot 1" aria-label="Show screenshot 1 of 2"><img src="assets/projects/cure_all/web-1.png" alt="" loading="lazy" /></button><button type="button" class="thumb mobile" data-kind="mobile" data-src="assets/projects/cure_all/mobile-1.png" data-alt="Cure All screenshot 2" aria-label="Show screenshot 2 of 2"><img src="assets/projects/cure_all/mobile-1.png" alt="" loading="lazy" /></button></div></div>
+          <p class="badges"><span>Web</span><span>Mobile</span></p>
+          <h3>Cure All: Clinical Workflow Platform</h3>
+          <p>A role-based healthcare system connecting hospitals, doctors, pharmacies, labs and patients. Patients and guardians can see everything on web and mobile.</p>
+          <ul class="points"><li>Multi-item prescriptions, partial dispensing and over-dispense protection.</li><li>Structured lab results with normal ranges and attachments.</li><li>Mobile app with role-based screens, prescription QR codes scanned by pharmacists, and push notifications.</li><li>Short-lived HS256 JWTs, argon2 hashing, rate limiting and an audit log.</li></ul>
+          <p class="tags">TypeScript · Express 5 · PostgreSQL · Prisma · React · React Native · Expo</p>
+          <p class="repo"><a href="https://github.com/shamilsuraweera/cure_all" target="_blank" rel="noopener">View repository ↗</a></p>
         </article>
       </div>
     </section>
@@ -102,9 +146,11 @@
       <ol class="timeline">
         <li><span class="when">Jul 2026 — Present</span><h3>ERP Developer &amp; Consultant (Shared Group Role) · ChillFrost Ltd | ColdCo Group | Smart Equip, United Kingdom</h3><ul><li>Delivered ERP customization and support across three affiliated entities, cutting duplicate configuration effort by 67% with a shared Microsoft Dynamics 365 customization framework.</li><li>Improved cross-entity reporting accuracy by 55% by standardizing data structures, workflows and module configurations.</li><li>Reduced average issue-resolution turnaround by 88% through consolidated support processes and reusable troubleshooting playbooks.</li><li>Improved efficiency for 19 business functions by eliminating 35 manual or duplicate processes.</li></ul></li>
         <li><span class="when">Jul 2025 — Jun 2026</span><h3>Business Analyst · HCLTech (Client: Sasol), United States</h3><ul><li>Gathered client requirements, configured enterprise systems and translated business needs into functional designs.</li><li>Supported process optimization and implementation initiatives.</li><li>Managed incident, task and change processes through ServiceNow ITSM, protecting critical ERP and data infrastructure.</li><li>Primary customer contact for high-priority issues, resolving them within SLA targets and in line with ITIL best practices.</li><li>Maintained service records and contributed to knowledge-base documentation.</li></ul></li>
-        <li><span class="when">Jul 2022 — Jun 2025</span><h3>Associate Business Analyst · HCLTech (Client: Unilever), United Kingdom &amp; Ireland</h3><ul><li>Gathered client requirements, configured enterprise systems and translated business needs into functional designs.</li><li>Supported process optimization and implementation initiatives.</li><li>Managed incident, task and change processes through ServiceNow ITSM.</li><li>Primary customer contact for high-priority issues, coordinating cross-functional teams to resolve them within SLA targets.</li><li>Maintained service records and contributed to knowledge-base documentation.</li></ul></li>
+        <li><span class="when">Jul 2022 — Jun 2025</span><h3>Associate Business Analyst · HCLTech (Client: Unilever), United Kingdom &amp; Ireland</h3><ul><li>Gathered client requirements, configured enterprise systems and translated business needs into functional designs.</li><li>Supported process optimization and implementation initiatives.</li><li>Managed incident, task and change processes through ServiceNow ITSM, protecting critical ERP and data infrastructure.</li><li>Primary customer contact for high-priority issues, coordinating cross-functional teams to resolve them within SLA targets and in line with ITIL best practices.</li><li>Maintained service records and contributed to knowledge-base documentation.</li></ul></li>
         <li><span class="when">Jan 2024 — Dec 2024</span><h3>Software Engineer (ERP) · Insight Square (Pvt) Ltd, Colombo</h3><ul><li>Customized and implemented ERP platforms to align with business processes.</li><li>Built mobile, web and desktop applications integrated with ERP systems.</li><li>Provided technology consulting on digital transformation, automation and scalable software.</li></ul></li>
-        <li><span class="when">Earlier roles</span><h3>Internship Trainee · HCLTech · System Coordinator · International Trimmings &amp; Labels · Data Entry Operator · DMS Software Technologies</h3><ul><li>HCLTech internship: hands-on exposure to ITSM practices in an ITIL-driven environment.</li><li>System Coordinator (2021): coordinated data workflows between production and quality teams.</li><li>Data Entry Operator (2020): managed large datasets for operational reporting.</li></ul></li>
+        <li><span class="when">Internship</span><h3>Internship Trainee · HCLTech, Colombo</h3><ul><li>Hands-on exposure to ITSM practices in an ITIL-driven environment.</li><li>Strengthened infrastructure-related IT knowledge and corporate communication skills.</li></ul></li>
+        <li><span class="when">Jan 2021 — Dec 2021</span><h3>System Coordinator · International Trimmings &amp; Labels, Colombo</h3><ul><li>Coordinated data workflows between production and quality teams to track metrics and ensure timely delivery.</li></ul></li>
+        <li><span class="when">Jan 2020 — Dec 2020</span><h3>Data Entry Operator · DMS Software Technologies, Colombo</h3><ul><li>Accurately inputted and managed large datasets for operational efficiency and reporting.</li></ul></li>
       </ol>
     </section>
 
@@ -130,6 +176,7 @@
   </main>
 
   <footer>© <span id="year"></span> Shamil Suraweera</footer>
+  <dialog id="lightbox" aria-label="Screenshot viewer"><img alt="" /><button type="button" aria-label="Close">✕</button></dialog>
   <script src="script.js"></script>
 </body>
 </html>

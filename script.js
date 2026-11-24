@@ -78,6 +78,20 @@ document.querySelectorAll(".stats dt").forEach((dt) => {
   })(performance.now());
 });
 
+// Project galleries + lightbox
+const lb = document.getElementById("lightbox");
+const lbImg = lb.querySelector("img");
+document.querySelectorAll("[data-gallery]").forEach((g) => {
+  const shot = g.querySelector(".shot"), img = shot.querySelector("img");
+  g.querySelectorAll(".thumb").forEach((t) => t.addEventListener("click", () => {
+    img.src = t.dataset.src; img.alt = t.dataset.alt;
+    shot.classList.remove("web", "mobile"); shot.classList.add(t.dataset.kind);
+    g.querySelectorAll(".thumb").forEach((o) => o.classList.toggle("on", o === t));
+  }));
+  shot.addEventListener("click", () => { lbImg.src = img.src; lbImg.alt = img.alt; lb.showModal(); });
+});
+lb.addEventListener("click", () => lb.close());
+
 // Cursor glow + card tilt (pointer devices only)
 if (!reduced && matchMedia("(hover: hover)").matches) {
   const glow = document.querySelector(".glow");
